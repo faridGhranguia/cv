@@ -12,10 +12,7 @@
 *,
 *::before,
 *::after{
-
     box-sizing: border-box;
-    margin: 0rem;
-    padding: 0rem;
 }
 
 html{
@@ -26,6 +23,6 @@ body{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     background-color: var(--col1);
     color: var(--col2);
-    min-height: 100vh;
-
+    margin: 0rem;
+    padding: 0rem;
 }

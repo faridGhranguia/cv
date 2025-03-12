@@ -1,11 +1,17 @@
 @import url('config.css');
 @import url('flex.css');
 
+header, nav, aside, main, section{
+    border: 1px solid var(--col2);
+}
 /******************************************/
-/****** CONFIGURATION HEADER-FOOTER *******/
+/******** CONFIGURATION HEADER-NAV ********/
 /******************************************/
+h1{
+    text-align: center;
+}
 
 
 /******************************************/
-/*********** CONFIGURATION HOME ***********/
+/*********** CONFIGURATION MAIN ***********/
 /******************************************/
