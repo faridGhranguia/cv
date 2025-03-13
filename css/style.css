@@ -1,13 +1,11 @@
 @import url('config.css');
 @import url('flex.css');
 
-header, nav, aside, main, section{
-    border: 1px solid var(--col2);
-}
 /******************************************/
 /******** CONFIGURATION HEADER ************/
 /******************************************/
 header{
+    border: 1px solid var(--col2);
     grid-area: header;
 }
 
@@ -36,8 +34,14 @@ main{
 /******************************************/
 /************** MEDIAQUERIES **************/
 /******************************************/
-/* @media only screen and (max-width: 600px) {
+@media only screen and (max-width: 900px) {
     body {
+        display: grid;
         grid-template-columns: 1fr;
+        grid-template-areas: 'header' 'aside' 'main';
     }
-  } */
+
+    .main__sectionText{
+        display: none;
+    }
+  }

@@ -24,11 +24,13 @@ body{
     background-color: var(--col1);
     color: var(--col2);
     min-height: 100vh;
-    margin: 0rem;
+    max-width: 1200px;
+    margin: auto;
     padding: 0rem;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-areas: 'header header header header'
                          'aside main main main'
                          'aside main main main';
+    gap: 2rem;
 }
