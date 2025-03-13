@@ -6,7 +6,7 @@
     --col2: #e8e8e8;
 
     --animLength: 250ms;
-    --borderRadius: 10px;
+    --borderRadius: 0.5;
 }
 
 *,
@@ -23,6 +23,12 @@ body{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
     background-color: var(--col1);
     color: var(--col2);
+    min-height: 100vh;
     margin: 0rem;
     padding: 0rem;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: 'header header header header'
+                         'aside main main main'
+                         'aside main main main';
 }

@@ -5,13 +5,39 @@ header, nav, aside, main, section{
     border: 1px solid var(--col2);
 }
 /******************************************/
-/******** CONFIGURATION HEADER-NAV ********/
+/******** CONFIGURATION HEADER ************/
 /******************************************/
+header{
+    grid-area: header;
+}
+
 h1{
     text-align: center;
+}
+
+h2{
+    background-color: var(--col2);
+    text-align: center;
+    color: var(--col1);
 }
 
 
 /******************************************/
 /*********** CONFIGURATION MAIN ***********/
 /******************************************/
+aside{
+    grid-area: aside;
+}
+
+main{
+    grid-area: main;
+}
+
+/******************************************/
+/************** MEDIAQUERIES **************/
+/******************************************/
+/* @media only screen and (max-width: 600px) {
+    body {
+        grid-template-columns: 1fr;
+    }
+  } */
