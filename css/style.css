@@ -23,12 +23,37 @@ h2{
 /******************************************/
 /*********** CONFIGURATION MAIN ***********/
 /******************************************/
-aside{
+.aside{
     grid-area: aside;
 }
 
 main{
     grid-area: main;
+}
+
+.aside__name{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+aside div{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    gap: 1rem;
+}
+
+section img{
+    width: 25px;
+}
+
+.main__sectionText{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+span{
+    font-style: italic;
 }
 
 /******************************************/
