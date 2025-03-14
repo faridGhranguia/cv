@@ -18,7 +18,7 @@ function shoot() {
     bullets.push({ x: player.x + player.width / 2, y: player.y });
 }
 setInterval(shoot, 500);
-setInterval(spawnTarget, 1000);
+setInterval(spawnTarget, 2000);
 
 canvas.addEventListener("mousemove", (e) => {
     player.x = e.clientX - player.width / 2;
@@ -47,15 +47,15 @@ function update() {
 
 function draw() {
     ctx.clearRect(0, 0, canvas.width, canvas.height);
-    ctx.fillStyle = "blue";
+    ctx.fillStyle = "#e8e8e8";
     ctx.fillRect(player.x, player.y, player.width, player.height);
     
-    ctx.fillStyle = "red";
+    ctx.fillStyle = "#e8e8e8";
     bullets.forEach(bullet => {
         ctx.fillRect(bullet.x, bullet.y, 5, 10);
     });
     
-    ctx.fillStyle = "black";
+    ctx.fillStyle = "#e8e8e8";
     ctx.font = "20px Arial";
     targets.forEach(target => {
         ctx.fillText(target.text, target.x, target.y);
