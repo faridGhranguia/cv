@@ -19,9 +19,9 @@ html{
     scroll-behavior: smooth;
 }
 
-body{
+/* body{
     background-color: var(--col1);
-}
+} */
 
 .bodyIndex{
     font-family: 'Roboto', Arial, Helvetica, sans-serif;
@@ -43,11 +43,8 @@ body{
     margin: 0;
     overflow: hidden;
     background-color: var(--col1);
-    color: var(--col2);
-    font-size: 3rem;
 }
 
 canvas {
     display: block;
-    background-color: var(--col1);
 }
